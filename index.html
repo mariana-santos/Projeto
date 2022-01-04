@@ -2,10 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Undefined</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+
+    <script defer src="./font-awesome/js/brands.js"></script>
+    <script defer src="./font-awesome/js/solid.js"></script>
+    <script defer src="./font-awesome/js/regular.js"></script>
+    <script defer src="./font-awesome/js/fontawesome.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -29,7 +34,7 @@
             </div>
             <div class="col">
               <h1 class="h1header">Bem-vindo!</h1>
-
+              
             </div>
           </div>
           <div class="row">
@@ -68,8 +73,9 @@
               <img src="img/sol1.jpg" class="img-under">
               <img src="img/sol-hover.jpg" class="img-top">
             </div>
-            <img class="favIcon" src="img/heartIcon.png">
-              <br>
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
 
               <form class="colors">
                 <input type="radio" name="1" onClick="im('a1');" checked id="preto">
@@ -80,7 +86,9 @@
               <p class="pprod">Armação: 001
                 <br>
               </p>
+
               
+
               <p class="ppreco">R$79,99</p>
               <button type="button" class="btn btn-outline-dark">Adicionar ao carrinho <img src="img/iconCarrinho.png" class="iconS"></button>
           </div>
@@ -89,9 +97,9 @@
               <img src="img/redondo1.jpg" class="img-under">
               <img src="img/redondo1-hover.jpg" class="img-top">
             </div>
-            <img class="favIcon" src="img/heartIcon.png">
+
             <br>
-              <br>
+
 
               <form class="colors">
                 <input type="radio" name="1" onClick="im('a1');" checked id="preto">
@@ -110,7 +118,6 @@
               <img src="img/sol1.jpg" class="img-under">
               <img src="img/sol-hover.jpg" class="img-top">
             </div>
-            <img class="favIcon" src="img/heartIcon.png">
               <br>
               <br>
 
@@ -131,7 +138,7 @@
               <img src="img/redondo2.jpg" class="img-under">
               <img src="img/redondo1-hover.jpg" class="img-top">
             </div>
-            <img class="favIcon" src="img/heartIcon.png">
+
             <br>
               <br>
               
@@ -152,9 +159,7 @@
         </div>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-
-    <footer class="bottom rodape">
+      <footer class="bottom rodape">
         <div class="container">
             <div class="row">
               <div class="col-sm">
@@ -210,10 +215,11 @@
           <p class="proda">© Todos os direitos reservados</p>
         </footer>
 
-
-
-    
-    
+        <script>
+          $(".fa-heart").click(function() {
+            $(this).toggle();
+          });
+        </script>
     
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

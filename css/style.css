@@ -74,7 +74,8 @@ h1{
     width: 100%;
     position: relative;
     display: inline-block;
-}
+    margin-top: 15%;
+ }
 .imgprod .img-top{
     display: none;        
     position: absolute;
@@ -91,6 +92,17 @@ h1{
 }
 .img-under{
     width: 100%;
+}
+
+.fa-heart{
+    font-size: 25px;
+    color:red;
+    position: absolute;
+    left: 80%;
+    top: 5%;
+}
+
+.div-heart{
 }
 
 input[type="radio"]{
@@ -176,12 +188,6 @@ input[type="radio"]:checked::before {
 }
 .iconS{
     width: 13%;
-}
-
-.favIcon{
-    width: 10%;
-    position: absolute;
-    left: 80%;
 }
 
 .searchbarcol{
