@@ -2,6 +2,11 @@ body{
     font-family: Palatino linotype, sans-serif;
     letter-spacing: 3;
 }
+
+a{
+    text-decoration: none;
+}
+
 .h1rod{
     font-size: larger;
     text-align: inherit;
@@ -12,10 +17,9 @@ body{
 }
 .icon{
     background-color: rgb(194, 216, 238);
-    padding: 5px;
+    padding: 7px;
     width: 35px;
-    border-radius: 40%;
-
+    border-radius: 50%;
 }
 .lirod{
     list-style: none;
@@ -29,6 +33,7 @@ body{
 }
 .arod{
     text-align: center;
+    text-decoration: none;
 }
 
 footer{
@@ -94,15 +99,12 @@ h1{
     width: 100%;
 }
 
-.fa-heart{
+.like{
     font-size: 25px;
     color:red;
     position: absolute;
     left: 80%;
     top: 5%;
-}
-
-.div-heart{
 }
 
 input[type="radio"]{
@@ -254,6 +256,27 @@ input[type="radio"]:checked::before {
     transition: width .3s;
 }
 
+.account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-boasvindas{
+    clear: both;
+    margin-bottom: 3%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.boasvindas{
+    margin: 0;
+}
+
 @media screen and (max-width: 500px) {
 
     .menu{
@@ -281,6 +304,23 @@ input[type="radio"]:checked::before {
 
     .img-carou{
         height: 50%;
+    }
+
+    .amenu::after{
+        height: 0;
+        background: none;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .col-rodape{
+        margin-top: 15%;
     }
 
 }

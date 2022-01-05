@@ -1,7 +1,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undefined</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">    
 
@@ -32,21 +32,32 @@
             <div class="col">
               <img src="img/logo.png" class="logo">
             </div>
-            <div class="col">
-              <h1 class="h1header">Bem-vindo!</h1>
-              
+
+            <div class="col account">
+
+              <div class="div-boasvindas">
+                <p class="boasvindas">Seja bem-vindo (a)!</p>
+                <p class="boasvindas">Conta e pedidos <i class="fas fa-caret-down"></i> </p>
+              </div>
+
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+
             </div>
+         
           </div>
           <div class="row">
           <div class="col menu">
               <ul class="menu">
-                <li class="item-menu"><a href="#" class="amenu">Home</a></li>
                 <li class="item-menu"><a href="#" class="amenu">Óculos de grau</a></li>
                 <li class="item-menu"><a href="#" class="amenu">Óculos de sol</a></li>
                 <li class="item-menu"><a href="#" class="amenu">Lentes</a></li>
                 <li class="item-menu"><a href="#" class="amenu">Acessórios</a></li>
+                <li class="item-menu"><a href="#" class="amenu">Outlet</a></li>
                 <li class="item-menu"><a href="#" class="amenu">Dúvidas</a></li>
-                <li class="item-menu"><a href="#" class="amenu">Fale Conosco</a></li>
               </ul>
           </div>
         </div>
@@ -74,7 +85,7 @@
               <img src="img/sol-hover.jpg" class="img-top">
             </div>
               <div>
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart like"></i>
               </div>
 
               <form class="colors">
@@ -162,7 +173,7 @@
       <footer class="bottom rodape">
         <div class="container">
             <div class="row">
-              <div class="col-sm">
+              <div class="col-sm col-rodape">
                 <h1 class="h1rod">Contato:</h1>
                 <ul class="ulrod">
                     
@@ -177,15 +188,15 @@
                     </li>
                     <li class="lirod">
                         <img class="icon" src="img/facebook.png">
-                        <a href="https://www.facebook.com/">/otica</a>
+                        <a href="https://www.facebook.com/">facebook/otica</a>
                     </li>
                     <li class="lirod">
                         <img class="icon" src="img/insta.png">
-                        <a href="https://www.instagram.com">/otica</a>
+                        <a href="https://www.instagram.com">instagram/otica</a>
                     </li>
                 </ul>
               </div>
-              <div class="col-sm">
+              <div class="col-sm col-rodape">
                 <h1 class="h1rod">Suporte:</h1>
                 <ul class="ulrod">
                     <li class="lirod">
@@ -198,7 +209,7 @@
                     </li>
                 </ul>
               </div>
-              <div class="col-sm">
+              <div class="col-sm col-rodape">
                 <h1 class="h1rod">Compre já: </h1>
                 <li class="lirod">
                 <a class="arod" href="#">Feminino</a>
@@ -215,14 +226,16 @@
           <p class="proda">© Todos os direitos reservados</p>
         </footer>
 
-        <script>
-          $(".fa-heart").click(function() {
-            $(this).toggle();
-          });
-        </script>
-    
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script>
+          $(".like").click(function() {
+            $(this).removeClass(".far");
+            $(this).addClass('.fas');
+          });
+        </script>
   </body>
 </html>
