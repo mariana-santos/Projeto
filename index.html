@@ -33,17 +33,28 @@
               <img src="img/logo.png" class="logo">
             </div>
 
-            <div class="col account">
+            <div class="col">
 
-              <div class="div-boasvindas">
-                <p class="boasvindas">Seja bem-vindo (a)!</p>
-                <p class="boasvindas">Conta e pedidos <i class="fas fa-caret-down"></i> </p>
+              <div class="cadastrar">
+                <div id="popup">
+                  <a class="a-btn" style="color: #fff">Entrar em minha conta</a>
+                  <p class="ou">ou</p>
+                  <p class="novo-cliente">É novo por aqui? <br> <a class="cadastre-se"> cadastre-se! </a></p>
+                </div>
               </div>
 
-              <div class="icons">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-phone"></i>
-                <i class="fas fa-shopping-bag"></i>
+              <div class="account">
+                <div class="div-boasvindas">
+                  <p class="boasvindas">Seja bem-vindo (a)!</p>
+                  <p class="boasvindas" id="conta">Conta e pedidos <i class="fas fa-caret-down"></i> </p>
+                </div>
+
+                <div class="icons">
+                  <i class="fas fa-heart"></i>
+                  <i class="fas fa-phone"></i>
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+
               </div>
 
             </div>
@@ -52,11 +63,11 @@
           <div class="row">
           <div class="col menu">
               <ul class="menu">
-                <li class="item-menu"><a href="#" class="amenu">Óculos de grau</a></li>
-                <li class="item-menu"><a href="#" class="amenu">Óculos de sol</a></li>
-                <li class="item-menu"><a href="#" class="amenu">Lentes</a></li>
-                <li class="item-menu"><a href="#" class="amenu">Acessórios</a></li>
-                <li class="item-menu"><a href="#" class="amenu">Outlet</a></li>
+                <li class="item-menu borda"><a href="#" class="amenu">Óculos de grau</a></li>
+                <li class="item-menu borda"><a href="#" class="amenu">Óculos de sol</a></li>
+                <li class="item-menu borda"><a href="#" class="amenu">Lentes</a></li>
+                <li class="item-menu borda"><a href="#" class="amenu">Acessórios</a></li>
+                <li class="item-menu borda"><a href="#" class="amenu">Outlet</a></li>
                 <li class="item-menu"><a href="#" class="amenu">Dúvidas</a></li>
               </ul>
           </div>
@@ -232,10 +243,20 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
         <script>
-          $(".like").click(function() {
-            $(this).removeClass(".far");
-            $(this).addClass('.fas');
+
+          var elemento = document.getElementById('conta');
+          var popup = document.getElementById('popup');
+
+          elemento.addEventListener('mouseenter', function(){
+            popup.style.visibility="visible";
           });
+
+          elemento.addEventListener('mouseleave', function(){
+            //popup.style.visibility="hidden";
+          });
+
+          elemento.addEventListener('')
+
         </script>
   </body>
 </html>
