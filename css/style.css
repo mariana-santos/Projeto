@@ -244,9 +244,6 @@ input[type="radio"]:checked::before {
     outline: rgb(255, 196, 0);
     background: rgb(255, 196, 0);
 }
-header{
-    height: 40%;
-}
 
 .carousel{
     height: 60%;
@@ -367,8 +364,6 @@ header{
 }
 
 .icons{
-    display: flex;
-    flex-direction: row;
     font-size: 1.5rem;
 }
 
@@ -421,6 +416,13 @@ header{
         text-decoration: none;
     }
 
+    .ulrod{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     .col-rodape{
         margin-top: 15%;
     }
@@ -431,6 +433,16 @@ header{
 
     .account{
         margin: 10% 0 10% 0;
+    }
+
+    .logo{
+        width: 100vw;
+    }
+
+    .account{
+        display: block;
+        width: 100vw;
+        text-align: center;
     }
 
 }
