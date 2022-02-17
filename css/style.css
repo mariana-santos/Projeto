@@ -91,9 +91,9 @@ footer{
 }
 
 .prod:hover{
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.712);
-    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.712);
-    box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 0.712);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.452);
+    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 0.452);
+    box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.452);
 }
 .imgprod{
     width: 100%;
@@ -198,18 +198,24 @@ input[type="radio"]:checked::before {
     align-items: center;
     margin: 1%;
     width: 100%;
-    font-size: 95%;
+    font-size: 1.2rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(255, 196, 0);
+    box-sizing: border-box;
+    border: solid 2px rgb(255, 196, 0);
+    font-family: 'sans-serif';
 }
 .btn:hover{
-    background: rgb(255, 196, 0);
-    color: #000000;
+    background: none;
+    border: solid 2px rgb(255, 196, 0);
+    color: #343a40;
 }
 .icon-cart{
-    width: 13%;
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
 .searchbarcol{
