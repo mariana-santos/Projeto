@@ -3,6 +3,10 @@ body{
     letter-spacing: 3;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .h1rod{
     font-size: larger;
     text-align: inherit;
@@ -115,9 +119,9 @@ footer{
     width: 100%;
 }
 
-.like{
+#like{
     font-size: 25px;
-    color:red;
+    color:#fe4900;
     position: absolute;
     left: 80%;
     top: 5%;
@@ -204,7 +208,7 @@ input[type="radio"]:checked::before {
     background: rgb(255, 196, 0);
     color: #000000;
 }
-.iconS{
+.icon-cart{
     width: 13%;
 }
 
@@ -250,9 +254,9 @@ header{
     text-align: center;
     margin: 0.3%;
 }
-.borda{
-    border-right: solid 2px #f15927;
-}
+/* .borda{
+    border: solid 2px #f15927;
+} */
 .menu{
     align-items: center;
     display: flex;
@@ -268,6 +272,7 @@ header{
     font-size: large;
     text-transform: uppercase;
     font-weight: lighter;
+    /* border: solid 2px #f15927; */
 }
 .amenu:hover{
     color: #000000;
@@ -346,12 +351,16 @@ header{
 .div-boasvindas{
     align-self: center;
     justify-self: center;
+    text-align: center;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
+    font-size: 1.5rem;
 }
+
+.first-icons{margin: 10px;}
 
 .boasvindas{
     margin: 0;

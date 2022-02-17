@@ -35,16 +35,19 @@
 
             <div class="col account">
 
-              <div class="account"  id="conta">
+              <div class="account" id="conta">
                 <div class="div-boasvindas">
                   <p class="boasvindas">Seja bem-vindo (a)!</p>
-                  <p class="boasvindas">Conta e pedidos <i class="fas fa-caret-down"></i> </p>
+                  <a href="#" class="boasvindas" data-toggle="popover" title="teste" 
+                  data-content="tessssste" data-placement="left">
+                    Conta e pedidos <i class="fas fa-caret-down"></i> 
+                  </a>
                 </div>
 
                 <div class="icons">
-                  <i class="fas fa-heart"></i>
-                  <i class="fas fa-phone"></i>
-                  <i class="fas fa-shopping-bag"></i>
+                  <i class="fas fa-heart first-icons"></i>
+                  <i class="fas fa-phone first-icons"></i>
+                  <i class="fas fa-shopping-bag first-icons"></i>
                 </div>
 
               </div>
@@ -55,7 +58,7 @@
           <div class="row">
           <div class="col menu">
               <ul class="menu">
-                <li class="item-menu borda"><a href="#" class="amenu">Armações</a></li>
+                <li class="item-menu"><a href="#" class="amenu borda">Armações</a></li>
                 <li class="item-menu borda"><a href="#" class="amenu">Lentes</a></li>
                 <li class="item-menu borda"><a href="#" class="amenu">Acessórios</a></li>
                 <li class="item-menu borda"><a href="#" class="amenu">Outlet</a></li>
@@ -63,13 +66,13 @@
               </ul>
           </div>
 
-          <div class="cadastrar">
+          <!-- <div class="cadastrar">
             <div id="popup">
               <a class="a-btn" style="color: #fff">Entrar em minha conta</a>
               <p class="ou line">ou</p>
               <p class="novo-cliente">É novo por aqui? <br> <a class="cadastre-se"> cadastre-se! </a></p>
             </div>
-          </div>
+          </div> -->
 
         </div>
         </div>
@@ -95,8 +98,8 @@
               <img src="img/sol1.jpg" class="img-under">
               <img src="img/sol-hover.jpg" class="img-top">
             </div>
-              <div>
-                <i class="far fa-heart like"></i>
+              <div id="fav-btn">
+                <i class="far fa-heart" id="like"></i>
               </div>
 
               <form class="colors">
@@ -109,10 +112,11 @@
                 <br>
               </p>
 
-              
-
               <p class="ppreco">R$79,99</p>
-              <button type="button" class="btn btn-outline-dark">Adicionar ao carrinho <img src="img/iconCarrinho.png" class="iconS"></button>
+              <button type="button" class="btn btn-outline-dark">
+                Adicionar ao carrinho 
+                <img src="img/iconCarrinho.png" class="icon-cart">
+              </button>
           </div>
           <div class="col prod">
             <div class="imgprod">
@@ -133,8 +137,10 @@
                 <br>
               </p>
               <p class="ppreco">R$79,99</p>
-              <button type="button" class="btn btn-outline-dark">Adicionar ao carrinho <img src="img/iconCarrinho.png" class="iconS"></button>
-          </div>
+              <button type="button" class="btn btn-outline-dark">
+                Adicionar ao carrinho 
+                <img src="img/iconCarrinho.png" class="icon-cart">
+              </button>          </div>
           <div class="col prod">
             <div class="imgprod">
               <img src="img/sol1.jpg" class="img-under">
@@ -153,8 +159,10 @@
               <br>
                 </p>
               <p class="ppreco">R$79,99</p>
-              <button type="button" class="btn btn-outline-dark">Adicionar ao carrinho <img src="img/iconCarrinho.png" class="iconS"></button>
-          </div>
+              <button type="button" class="btn btn-outline-dark">
+                Adicionar ao carrinho 
+                <img src="img/iconCarrinho.png" class="icon-cart">
+              </button>          </div>
           <div class="col prod">
             <div class="imgprod">
               <img src="img/redondo2.jpg" class="img-under">
@@ -176,8 +184,11 @@
               <br>
               
               <p class="ppreco">R$79,99</p>
-              <button type="button" class="btn btn-outline-dark">Adicionar ao carrinho <img src="img/iconCarrinho.png" class="iconS"></button>
-          </div>
+              <button type="button" class="btn btn-outline-dark">
+                Adicionar ao carrinho 
+                <img src="img/iconCarrinho.png" class="icon-cart">
+              </button>          
+            </div>
         </div>
       </div>
 
@@ -237,12 +248,11 @@
           <p class="proda">© Todos os direitos reservados</p>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
 
         <script src="./js/script.js"> </script>
         <script> </script>
   </body>
-</html>
+</html>     
