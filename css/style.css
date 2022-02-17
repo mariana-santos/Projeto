@@ -17,14 +17,17 @@ a:hover{
 }
 .icon{
     background-color: rgb(194, 216, 238);
-    padding: 7px;
-    width: 35px;
+    padding: 5px;
+    font-size: 1.5rem;
     border-radius: 50%;
 }
 .lirod{
     list-style: none;
     margin-bottom: 10px;
+    display: flex;
+    letter-spacing: normal;
 }
+
 .ulrod{
     padding: 0;
     justify-content: center;
@@ -34,6 +37,7 @@ a:hover{
 .arod{
     text-align: center;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 footer{
@@ -198,7 +202,7 @@ input[type="radio"]:checked::before {
     align-items: center;
     margin: 1%;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -206,7 +210,6 @@ input[type="radio"]:checked::before {
     background: rgb(255, 196, 0);
     box-sizing: border-box;
     border: solid 2px rgb(255, 196, 0);
-    font-family: 'sans-serif';
 }
 .btn:hover{
     background: none;
