@@ -13,15 +13,19 @@
       
   //   });
 
-  $('#fav-btn').click(() => {
-    let currentIcon = $('#like').attr('data-prefix');
-    let btn = $('#like');
-
-    if(currentIcon == 'fas')
-      btn.attr('data-prefix', 'far')
-    else btn.attr('data-prefix', 'fas')
-  });
-
   $(document).ready(()=>{
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({html: true});
+
+    $('#fav-btn').click(() => {
+      let currentIcon = $('#like').attr('data-prefix');
+      let btn = $('#like');
+  
+      if(currentIcon == 'fas')
+        btn.attr('data-prefix', 'far');
+  
+      else btn.attr('data-prefix', 'fas')
+    });
+
+    console.log($('#boasvindas'))
+
   })

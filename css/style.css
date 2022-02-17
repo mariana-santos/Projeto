@@ -302,36 +302,33 @@ header{
 }
 
 #popup{
-    border: solid 1px #f15927;
-    padding: 8px;
     margin: 0;
     border-radius: 4px;
-    visibility: hidden;
-    position: absolute;
     width: max-content;
-    right: 10%;
-    top: 20%;
-}
-
-.popup:hover{
-    visibility: visible;
+    height: 100%;
 }
 
 .cadastrar{
-    display: flex;
     align-items: center;
-    justify-content: flex-end;
     text-align: center;
-    border-radius: 15%;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    padding: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .a-btn{
-    background-color: #f15927;
-    padding: 7px;
-    font-weight: 900;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #fd4b00;
+    opacity: 0.8;
+    color: white;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.a-btn:hover{
+    opacity: 1;
+    color: white;
 }
 
 .ou{
@@ -339,13 +336,19 @@ header{
     margin-bottom: 5;
 }
 
-.novo-cliente{
-    margin: 0;
+.cadastre-se{
+    font-weight: 900;
+    color: #fd4b00;
+    opacity: 0.8
 }
 
-.cadastre-se{
+.cadastre-se:hover{
+    opacity: 1;
+    color: #fd4b00;
+}
+
+.novo-cliente{
     margin: 0;
-    font-weight: 900;
 }
 
 .div-boasvindas{
